@@ -1,0 +1,242 @@
+﻿input[type=text]
+{
+    @include transition(all 0.30s ease-in-out);
+    outline: none;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus
+{
+    @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input[type=radio]:checked{
+  border: 5px solid #0DFF92 !important;
+}
+.stylish-input-group .input-group-addon
+{
+    background: white; 
+}
+.stylish-input-group .form-control
+{
+	border-right:0;
+	display:block;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button
+{
+    border:0;
+    background:transparent;
+}
+#divSearchKeyword
+{
+    padding-bottom: 1%;
+    border-bottom: 1px solid #ccc;
+}
+#divSearchResult
+{
+    padding-top: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.topnav
+{
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DD4B39;
+}
+
+ul.topnav li
+{
+    float: left;
+    cursor: pointer;
+}
+
+ul.topnav li a
+{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 11px 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {  background-color: #555;}
+
+ul.topnav li a.active 
+{
+    font-weight:bold;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+ul.topnav li.icon { display: none;}
+
+@media screen and (max-width:850px)
+{
+    ul.topnav li:not(.activeList) {  display: none;}
+    ul.topnav li.icon
+    {
+        float: right;
+        display: inline-block;
+    }
+    ul.topnav li.activeList
+    {
+        display: inline;
+        width: 80%;
+    }
+    ul.topnav li.activeList a.active
+    {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:850px)
+{
+    ul.topnav.responsive   
+    {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li
+    {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a
+    {
+        display: block;
+        text-align: left;
+    }
+}
+
+#contentRmePatient
+{
+    font-size:106%;
+}
+
+#contentRmePatient p.text-light-blue
+{
+    font-size:115%;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/*To prevent 2 rows from sticking together ie no spaces separated*/
+#contentRmePatient div.row .moreRowSameCategory{
+    padding-top:8px;
+}
+
+label.customLabel{
+    font-weight: 600;
+}
+
+#doctorForm .nameIC
+{
+    color:Blue;
+    font-size:107%;
+}
+
+#doctorForm #doctorLegend
+{
+    color:#DD4B39;
+    font-weight:bold;
+}
+
+#saveBtn1,#saveBtn2,#saveBtn3,#saveBtn4
+{
+    max-width:30%;
+    margin: 10px auto 15px auto;
+    background:#DD4B39;
+    color:white;
+    font-size:107%;
+    font-weight:bold;
+}
+div #centerDiv
+{
+    margin: 0 auto;
+    text-align:center;
+}
+
+#submitBtn
+{
+    max-width:30%;
+    display:inline-block;
+    background:#3C8DBC;
+    color:White;
+    font-size:107%;
+    font-weight:bold;
+}
+
+#saveBtn5
+{
+    max-width:30%;
+    display:inline-block;
+    background:#DD4B39;
+    color:white;
+    font-size:107%;
+    font-weight:bold;
+}
+
+#partThree .form-inline
+{
+    padding-top:20px;
+}
+
+.cell-center
+{
+    text-align:center;
+}
+
+
+.gridview th, .gridview td
+{
+    text-align:center;
+}
+
+.paging a
+{
+    background-color: #FFFFFF;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-family: Verdana,sans-serif;
+    color:#337ab7;
+    border: 0.8px solid #b0b0b0;
+}
+         
+.paging a:hover
+{
+    background-color: #DDDDDD;
+    color: #337ab7;
+    border: 0.8px solid #b0b0b0;
+}
+
+.paging span
+{
+    background-color: #337ab7;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    border: 0.8px solid #337ab7;
+}
+
+#contentRmePatient .smallHeader
+{
+    color:#DD4B39;
+    font-weight:400;
+    font-size: 165%;
+    padding-bottom:10px;
+    margin-top:0px;
+    padding-top:10px;
+}
